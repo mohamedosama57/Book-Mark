@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book marker</title>
+    <link rel="icon" href="./images/bookmark.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<div class="container">
+    <h1 class="text-center mt-5">Bookmarker</h1>
+    <div class="inputs-body">
+        <h2 class="text-center ">
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+        </h2>
+        <div class="inputs">
+            <label for="sitName">
+                <i class="fa-solid fa-book-bookmark pe-2"></i>
+                Site Name
+            </label>
+            <input class="form-control mt-2 py-2 mb-4" type="text" id="siteName" placeholder="Bookmark Name">
+            <label for="sitName">
+                <i class="fa-solid fa-link pe-2"></i>
+                Site URL
+            </label>
+            <input class="form-control mt-2 py-2" type="text" id="siteUrl" placeholder="Website Url">
+            <div class="btn-submit d-flex">
+                <button onclick="addWebsite()" class="btn btn-warning m-auto justify-content-center mt-3 px-5 py-2">Submit</button>
+            </div>
+        </div>
+    </div>
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody id="tbody">
+        <tr>
+            <td>1</td>
+            <td>Facebook</td>
+            <td><button class="btn btn-primary" data-index="0">
+                <i class="fa-solid fa-eye pe-2"></i>Visit
+              </button></td>
+              <td><button class="btn btn-danger" data-index="0">
+                <i class="fa-solid fa-trash-can pe-2"></i>Delete
+              </button></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
